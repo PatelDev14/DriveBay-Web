@@ -56,6 +56,11 @@
     --shadow-glow: 0 0 60px hsl(180 100% 50% / 0.2);
     --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
     --shadow-float: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
+
+    /* Add accent colors */
+  --purple: 270 100% 60%;      /* For secondary actions */
+  --pink: 330 100% 60%;         /* For highlights */
+  --teal: 200 100% 45%;         /* For alternative accents */
   }
 
   .dark {
