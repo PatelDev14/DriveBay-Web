@@ -69,45 +69,7 @@ const HeroSection = () => {
                   <p className="text-sm sm:text-base font-semibold text-foreground">App Store</p>
                 </div>
               </motion.a>
-
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="glass-card px-5 sm:px-6 py-2.5 sm:py-3 flex items-center justify-center sm:justify-start gap-3 hover:border-cyan/30 transition-colors duration-300"
-              >
-                <svg viewBox="0 0 24 24" className="w-6 h-6 sm:w-8 sm:h-8 text-foreground" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div className="text-left">
-                  <p className="text-[10px] sm:text-xs text-muted-foreground">Get it on</p>
-                  <p className="text-sm sm:text-base font-semibold text-foreground">Google Play</p>
-                </div>
-              </motion.a>
             </div>
-
-            {/* Stats - Hidden on very small screens */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="hidden sm:flex gap-6 lg:gap-8 mt-8 sm:mt-12 justify-center lg:justify-start"
-            >
-              <div>
-                <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient-cyan">50K+</p>
-                <p className="text-xs sm:text-sm text-muted-foreground">Active Users</p>
-              </div>
-              <div className="w-px bg-border" />
-              <div>
-                <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient-cyan">10K+</p>
-                <p className="text-xs sm:text-sm text-muted-foreground">Parking Spots</p>
-              </div>
-              <div className="w-px bg-border" />
-              <div>
-                <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient-cyan">4.9</p>
-                <p className="text-xs sm:text-sm text-muted-foreground">App Rating</p>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Phone Mockup */}
