@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="AppIcon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success | DriveBay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --background: #030712;
+      --cyan: #00ffff;
+      --electric: #3b82f6;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      background-image: radial-gradient(circle at center, rgba(0, 255, 255, 0.05) 0%, transparent 70%);
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 2.5rem;
+      padding: 3rem;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    .icon-circle {
+      width: 80px;
+      height: 80px;
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      color: var(--cyan);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #ffffff, var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      color: #94a3b8;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+    .btn {
+      display: block;
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--electric) 100%);
+      color: #030712;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px -5px rgba(0, 255, 255, 0.4);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px -5px rgba(0, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <div class="icon-circle">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <h1>Success!</h1>
+    <p>Your bank account is now securely connected with Stripe.</p>
+    <a href="https://www.drivebay.ca" class="btn">Back to DriveBay App</a>
+  </div>
+</body>
+</html>
