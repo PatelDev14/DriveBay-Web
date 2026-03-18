@@ -14,9 +14,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
+    { name: "Home", href: "/" }, 
     { name: "Features", href: "#features" },
     { name: "Gallery", href: "#gallery" },
     { name: "Mission", href: "#testimonials" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   return (
@@ -59,7 +61,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#download"
+              href="https://apps.apple.com/ca/app/drivebay-private-parking/id6759207556"
               className="px-7 py-3 rounded-2xl bg-white text-black text-xs font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_10px_20px_rgba(255,255,255,0.1)]"
             >
               Get App
@@ -107,7 +109,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                href="#download"
+                href="https://apps.apple.com/ca/app/drivebay-private-parking/id6759207556"
                 className="mt-4 px-10 py-5 rounded-3xl bg-cyan text-[#030712] font-black text-lg shadow-[0_20px_40px_rgba(34,211,238,0.2)]"
                 onClick={() => setIsOpen(false)}
               >

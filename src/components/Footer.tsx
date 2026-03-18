@@ -10,6 +10,7 @@ const Footer = () => {
       { name: "Features", href: "#features" },
       { name: "Pricing", href: "#" },
       { name: "Gallery", href: "#gallery" },
+      { name: "FAQ", href: "/faq" },
     ],
     company: [
       { name: "About Us", href: "#" },
@@ -17,7 +18,7 @@ const Footer = () => {
       { name: "Contact", href: "#" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "#" },
+      { name: "Privacy Policy", href: "https://www.drivebay.ca/privacy" },
       { name: "Terms of Service", href: "#" },
       { name: "Cookie Policy", href: "#" },
     ],
@@ -56,7 +57,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-20">
             {/* Apple Store */}
             <motion.a
-              href="#"
+              href="https://apps.apple.com/ca/app/drivebay-private-parking/id6759207556"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="glass-card w-full sm:w-auto px-6 py-3 flex items-center justify-center gap-3 border border-white/10 hover:border-cyan/30 transition-all duration-300"
@@ -113,7 +114,7 @@ const Footer = () => {
           <p>© {currentYear} DriveBay Technologies Inc.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">System Status</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="https://www.drivebay.ca/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
       </div>
