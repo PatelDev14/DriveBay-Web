@@ -56,7 +56,7 @@ const HeroSection = () => {
             {/* App Store Badges */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start" id="download">
               <motion.a
-                href="#"
+                href="https://apps.apple.com/ca/app/drivebay-private-parking/id6759207556"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="glass-card px-5 sm:px-6 py-2.5 sm:py-3 flex items-center justify-center sm:justify-start gap-3 hover:border-cyan/30 transition-colors duration-300"
