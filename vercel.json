@@ -1,16 +1,22 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "routes": [
-    { 
-      "src": "/success", 
-      "dest": "/success.html" 
+  "rewrites": [
+    {
+      "source": "/success",
+      "destination": "/success.html"
     },
-    { 
-      "src": "/reauth", 
-      "dest": "/reauth.html" 
+    {
+      "source": "/reauth",
+      "destination": "/reauth.html"
     },
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
