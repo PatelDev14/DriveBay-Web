@@ -1,5 +1,15 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
+    { 
+      "src": "/success", 
+      "dest": "/success.html" 
+    },
+    { 
+      "src": "/reauth", 
+      "dest": "/reauth.html" 
+    },
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
   ]
