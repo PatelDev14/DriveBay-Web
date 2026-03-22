@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FAQ from "./pages/FAQ";
+import Privacy from "./pages/Privacy";
+import Success from "./pages/Success";
+import Reauth from "./pages/Reauth";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +39,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/reauth" element={<Reauth />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

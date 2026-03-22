@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -160,6 +162,9 @@ const faqCategories = [
     <div className="min-h-screen bg-gradient-to-b from-background to-slate-950 pt-32 pb-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto px-6 mb-16">
+        <Link to="/" className="inline-flex items-center gap-2 text-cyan font-semibold mb-8 opacity-80 hover:opacity-100 transition-opacity">
+          <ArrowLeft className="w-5 h-5" /> Back to App
+        </Link>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

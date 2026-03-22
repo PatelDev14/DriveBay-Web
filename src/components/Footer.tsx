@@ -18,10 +18,10 @@ const Footer = () => {
       { name: "Contact", href: "#" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "https://www.drivebay.ca/privacy" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Cookie Policy", href: "#" },
-    ],
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "#" },
+    { name: "Cookie Policy", href: "#" },
+],
   };
 
   return (
@@ -114,7 +114,7 @@ const Footer = () => {
           <p>© {currentYear} DriveBay Technologies Inc.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">System Status</a>
-            <a href="https://www.drivebay.ca/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a> 
           </div>
         </div>
       </div>
